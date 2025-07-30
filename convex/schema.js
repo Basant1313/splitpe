@@ -67,7 +67,7 @@ export default defineSchema ({
         createdBy: v.id("users"), //Reference to users table
     })
     .index("by_group", ["groupId"])
-    .index("by_user_and_group", ["paidUserId", "groupId"])
+    .index("by_user_and_group", ["paidByUserId", "groupId"])
     .index("by_receiver_and_group", ["receivedByUserId", "groupId"])
     .index("by_date", ["date"]),
 })
